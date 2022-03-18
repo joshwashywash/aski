@@ -1,8 +1,12 @@
+#!/usr/bin/env node
+
 import chalk from 'chalk';
 import meow from 'meow';
 import sharp from 'sharp';
 import { basename, extname } from 'path';
 import { outputFile, pathExists } from 'fs-extra';
+
+const name = 'aski';
 
 const CHARS =
   '$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,"^`\'. ';
@@ -20,12 +24,12 @@ const toCharIndex = (n: number) => Math.floor((n * CHARS.length - 1) / 0xff);
 const helpText = `
 ${chalk.bold('Usage')}:
 
-  $ asciify <input>
+  $ ${name} <input>
 
 ${chalk.bold('Examples')}:
 
-  $ asciify meowth.png
-  $ asciify images/meowth.png
+  $ ${name} meowth.png
+  $ ${name} images/meowth.png
 `;
 
 const cli = meow(helpText, {

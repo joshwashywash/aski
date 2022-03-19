@@ -1,5 +1,3 @@
-This is a work in progress as I'm seeing what it takes and doesn't take to get an npm package published.
-
 # Table of Contents
 
 - [Quick Start](#Quick-Start)
@@ -7,29 +5,19 @@ This is a work in progress as I'm seeing what it takes and doesn't take to get a
 
 ## Quick Start
 
-0. clone the repo
-
-1. Install dependencies
+1. Install globally or locally
 
 ```console
-$ npm install
+npm install aski -g
 ```
 
-2. Build the project
+2. Run from the command line (replace **meowth.png** with the path to your image)
 
 ```console
-$ npm run build
+npx aski meowth.png
 ```
 
-3. Run the app
-
-```console
-$ npm run start examples/meowth/meowth.png
-```
-
-This will either create or overwrite the file **meowth.txt** in the same directory that you ran the application in.
-
-4. Open the generated `txt` file to see the result
+3. Open the generated `txt` file to see the result.
 
 ```console
 $ xdg-open meowth.txt

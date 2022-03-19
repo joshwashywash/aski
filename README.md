@@ -8,13 +8,13 @@
 1. Install globally or locally
 
 ```console
-npm install aski -g
+$ npm install aski -g
 ```
 
 2. Run from the command line (replace **meowth.png** with the path to your image)
 
 ```console
-npx aski meowth.png
+$ npx aski meowth.png
 ```
 
 3. Open the generated `txt` file to see the result.

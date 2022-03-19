@@ -18,8 +18,12 @@
     "art",
     "text"
   ],
-  "author": "josh oertel",
+  "author": {
+    "name": "josh oertel",
+    "url": "https://josho.dev"
+  },
   "license": "MIT",
+  "repository": "joshwashywash/aski",
   "devDependencies": {
     "@tsconfig/node16": "^1.0.2",
     "@types/fs-extra": "^9.0.13",
